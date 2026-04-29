@@ -21,6 +21,14 @@ This project combines isolate genome sequencing, metagenomic recruitment, and co
 5. Genome quality and taxonomic placement were evaluated using CheckM2 and GTDB ANI screening.
 6. Isol153 was compared with closely related *Vibrio* isolates using anvi’o-based pangenome analysis and KOfam-supported functional comparison.
 
+## Workflow modules
+
+### 1. Metagenomic recruitment mapping
+Leaf-associated *Zostera marina* metagenomic reads were mapped against a combined Bowtie2 reference built from 19 eelgrass-associated *Vibrio* isolate genomes. Recruitment was summarized at the genome level using Samtools and CoverM, with relative abundance, mean coverage, and covered fraction used in downstream comparisons.
+
+Detailed workflow: [docs/mapping_workflow.md](docs/mapping_workflow.md)
+
+
 ## Main findings
 
 ### 1. Recruitment across sites
