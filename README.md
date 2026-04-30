@@ -26,7 +26,7 @@ This project combines isolate genome sequencing, metagenomic recruitment, and co
 ### 1. Metagenomic recruitment mapping
 Leaf-associated *Zostera marina* metagenomic reads were mapped against a combined Bowtie2 reference built from 19 eelgrass-associated *Vibrio* isolate genomes. Recruitment was summarized at the genome level using Samtools and CoverM, with relative abundance, mean coverage, and covered fraction used in downstream comparisons.
 
-Detailed workflow: [docs/mapping_workflow.md](docs/mapping_workflow.md)
+Detailed workflow: [docs/mapping_workflow.md](docs/mapping_workflow.md)   Scripts: [scripts/01_mapping](scripts/01_mapping)
 
 
 ## Main findings
