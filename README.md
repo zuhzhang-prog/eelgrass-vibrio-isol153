@@ -28,6 +28,14 @@ Leaf-associated *Zostera marina* metagenomic reads were mapped against a combine
 
 Detailed workflow: [docs/mapping_workflow.md](docs/mapping_workflow.md)   Scripts: [scripts/01_mapping](scripts/01_mapping)
 
+### 2. Phylogenetic tree construction
+
+Evolutionary relationships among the 19 isolate genomes were explored 
+using a KBase species-tree workflow. The resulting tree guided isolate 
+selection for downstream pangenome comparison.
+
+Detailed workflow: [docs/phylogeny_workflow.md](docs/phylogeny_workflow.md)
+
 
 ## Main findings
 
