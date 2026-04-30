@@ -69,20 +69,20 @@ The tree revealed several well-supported clusters within the 19-isolate collecti
 
 - Many major groupings showed **high support values close to 1.000**, indicating robust evolutionary signal.
 - Isolates were not uniformly distributed — some formed tight clusters, while others were more phylogenetically isolated.
-- **Isol153 grouped near a specific subset of isolates**, which informed the choice of comparison genomes for downstream pangenome analysis.
+- **Isol153 fell within one of several distinct species-level clusters**, and the tree made it possible to identify representatives of the other clusters for downstream pangenome comparison.
 
 ### Step 5. Select isolates for downstream comparison
 
-Based on the tree topology, the following four isolates were selected for pangenome comparison:
+The tree resolved the 19 isolates into several distinct species-level clusters. From these clusters, four isolates were selected for pangenome comparison — each representing a **different species-level group** identified in the tree:
 
 | Isolate | Role in comparison |
 |---|---|
-| **Isol153** | Focal isolate (strongest recruitment signal) |
-| Isol88 | Closely related comparator |
-| Isol104 | Closely related comparator |
-| Isol129 | Closely related comparator |
+| **Isol153** | Focal isolate (strongest recruitment signal); representative of its species-level cluster |
+| Isol88 | Representative of a separate species-level cluster |
+| Isol104 | Representative of a separate species-level cluster |
+| Isol129 | Representative of a separate species-level cluster |
 
-These were chosen to ask: does Isol153 carry distinctive accessory gene content compared to its nearest phylogenetic neighbors? Selecting closely related genomes makes this comparison more meaningful — differences between distant relatives would reflect deep evolutionary divergence rather than lineage-specific adaptation.
+The rationale: by choosing one representative per species-level group, the pangenome comparison captures **inter-species** genomic variation rather than within-species strain variation. This design asks a specific question: what does Isol153 carry that representatives of other eelgrass-associated *Vibrio* species do not? Differences identified in this comparison are more likely to reflect species-level functional divergence — including candidate traits related to ecological niche or host association — rather than minor strain-level polymorphisms.
 
 ---
 
@@ -96,7 +96,7 @@ These were chosen to ask: does Isol153 carry distinctive accessory gene content 
 ### How this output was used in the poster
 
 - **Figure 1 context**: the tree provided evolutionary framing for interpreting which isolates recruited reads and whether recruitment was phylogenetically structured.
-- **Pangenome isolate selection**: the tree guided the choice of Isol88, Isol104, and Isol129 as comparison genomes for the Figure 2 pangenome analysis.
+- **Pangenome isolate selection**: the tree identified distinct species-level clusters, from which Isol88, Isol104, and Isol129 were chosen as representatives of different species groups for the Figure 2 pangenome comparison with Isol153.
 
 ---
 
@@ -112,7 +112,7 @@ Single-gene trees (such as 16S rRNA) have limited resolution for distinguishing 
 
 ### Why only 4 isolates for pangenome comparison, not all 19?
 
-Pangenome analyses are most interpretable when the comparison set is phylogenetically coherent. Including all 19 isolates — some of which are distantly related — would produce a pangenome dominated by deep divergence, making it difficult to identify Isol153-specific accessory content. By restricting the comparison to Isol153's nearest neighbors, differences are more likely to reflect recent lineage-specific gain or loss rather than noise from ancient divergence.
+The 19 isolates span multiple species-level groups. Including all of them in a single pangenome would mix within-species and between-species variation, making it difficult to attribute gene-cluster differences to any particular lineage. Instead, one representative was selected from each of four distinct species-level clusters identified in the tree. This design isolates **inter-species** differences: gene content present in Isol153 but absent from representatives of the other three species groups is a stronger candidate for lineage-specific ecological function than a gene missing from one strain but present in another strain of the same species.
 
 ---
 
@@ -120,5 +120,5 @@ Pangenome analyses are most interpretable when the comparison set is phylogeneti
 
 - This tree was used as an **exploratory phylogenetic framework**, not as a final taxonomic assignment. Taxonomic placement of Isol153 was evaluated separately using GTDB-Tk and ANI screening (see `docs/checkm2_gtdb_workflow.md`).
 - The tree describes relationships **within this 19-isolate collection** and does not represent the full diversity of *Vibrio* globally.
-- The pangenome comparison set (Isol88, Isol104, Isol129, Isol153) was guided by this tree in combination with downstream analysis goals — the tree was a starting point, not the sole criterion.
+- The pangenome comparison set (Isol88, Isol104, Isol129, Isol153) was chosen so that each isolate represents a different species-level cluster identified in the tree. The tree was the primary basis for this selection.
 - Because the analysis was performed in KBase's browser interface, there are no local command-line scripts for this step. The KBase Narrative preserves the full interactive record of the analysis.
