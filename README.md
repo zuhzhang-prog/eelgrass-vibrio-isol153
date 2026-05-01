@@ -43,6 +43,14 @@ The focal isolate Isol153 was evaluated for genome quality using CheckM2 and the
 - Detailed workflow: [docs/isol153_taxonomy_workflow.md](docs/isol153_taxonomy_workflow.md)
 - Scripts: [scripts/03_checkm2_gtdb/](scripts/03_checkm2_gtdb/)
 
+### 4. Pangenome analysis
+
+Isol153 was compared with closely related *Vibrio* isolates using a local anvi'o pangenome workflow. This analysis was used to distinguish conserved shared gene-cluster content from variable, accessory, and singleton-like regions.
+
+- Detailed workflow: [docs/pangenome_workflow.md](docs/pangenome_workflow.md)
+
+- 
+
 ## Main findings
 
 ### 1. Recruitment across sites
