@@ -9,21 +9,89 @@ The outputs of this workflow support **Figure 1** of the poster.
 
 ---
 
-## Software
+## Software and environment
 
-- `bowtie2` — short-read aligner
-- `samtools` — SAM/BAM conversion, sorting, indexing
-- `coverm` — genome-level coverage and abundance summarization
-- `conda` — environment management
+| Tool | Purpose |
+|---|---|
+| `bowtie2` | Short-read aligner — maps metagenomic reads to isolate reference genomes |
+| `samtools` | SAM/BAM conversion, sorting, and indexing |
+| `coverm` | Genome-level coverage and abundance summarization |
+| `conda` | Environment management |
 
-## Environment
+Platform: WSL2 / Linux
 
-A dedicated conda environment was used:
+### Setting up the mapping environment
+
+A dedicated conda environment was created to keep mapping tools isolated from other project environments (e.g., anvi'o, GTDB-Tk). This avoids dependency conflicts between tools that require different versions of shared libraries.
+
+#### 1. Create the environment and install tools
 
 ```bash
 conda create -n mapping_env -c conda-forge -c bioconda bowtie2 samtools coverm
+```
+
+This installs all three tools and their dependencies in one step. The `-c conda-forge -c bioconda` flags tell conda to search the community (conda-forge) and bioinformatics (bioconda) package repositories.
+
+#### 2. Activate the environment
+
+```bash
 conda activate mapping_env
 ```
+
+After activation, your terminal prompt should show `(mapping_env)` at the beginning. All `bowtie2`, `samtools`, and `coverm` commands will use the versions installed in this environment.
+
+#### 3. Verify installation
+
+```bash
+bowtie2 --version
+samtools --version
+coverm --version
+```
+
+Confirm that all three tools are found and report version numbers. If any command returns `command not found`, the environment was not activated or the install failed.
+
+#### 4. Troubleshooting
+
+**`conda create` is very slow or hangs:**
+
+conda's default solver can be slow with bioconda. If this happens, install the faster `libmamba` solver first:
+
+```bash
+conda install -n base conda-libmamba-solver
+conda config --set solver libmamba
+```
+
+Then re-run the `conda create` command.
+
+**`coverm` installation fails:**
+
+CoverM has a Rust dependency that occasionally fails to compile on some systems. If `conda install` fails, try installing CoverM separately:
+
+```bash
+conda create -n mapping_env -c conda-forge -c bioconda bowtie2 samtools
+conda activate mapping_env
+conda install -c bioconda coverm
+```
+
+**WSL runs out of memory during installation:**
+
+Some conda solves require significant RAM. If conda is killed mid-solve, try closing other programs or increasing WSL memory allocation in `.wslconfig`:
+
+```text
+# Windows: C:\Users\<username>\.wslconfig
+[wsl2]
+memory=16GB
+```
+
+Then restart WSL with `wsl --shutdown` and try again.
+
+### Activating the environment (daily use)
+
+```bash
+conda activate mapping_env
+```
+
+This is the only command needed before running any mapping scripts. The scripts themselves do not activate the environment — you must do it manually before calling them.
 
 ## Directory structure
 
