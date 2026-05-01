@@ -41,7 +41,7 @@ Detailed workflow: [docs/phylogeny_workflow.md](docs/phylogeny_workflow.md)
 The focal isolate Isol153 was evaluated for genome quality using CheckM2 and then screened against GTDB representative genomes using GTDB-Tk ANI analysis. This workflow was used to confirm that the Isol153 assembly was high quality and to identify its closest currently represented GTDB reference lineage.
 
 - Detailed workflow: [docs/isol153_taxonomy_workflow.md](docs/isol153_taxonomy_workflow.md)
-- Scripts: [scripts/04_checkm2_gtdb/](scripts/04_checkm2_gtdb/)
+- Scripts: [scripts/03_checkm2_gtdb/](scripts/03_checkm2_gtdb/)
 
 ## Main findings
 
