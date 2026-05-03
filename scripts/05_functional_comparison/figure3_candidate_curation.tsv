@@ -1,0 +1,14 @@
+function_keyword	display_label	category	include_in_figure
+agarase	Beta-agarase (Agar degradation)	Carbohydrate/Transport	yes
+glucoside	Beta-glucoside PTS system	Carbohydrate/Transport	yes
+lactose	Lactose permease (MFS)	Carbohydrate/Transport	yes
+maltose	Maltose PTS system	Carbohydrate/Transport	yes
+sugar transporter	Simple sugar transporter	Carbohydrate/Transport	yes
+AcfD	Accessory colonization factor AcfD	Surface/Colonization	yes
+VpsM	Biofilm biosynthesis protein VpsM	Surface/Colonization	yes
+VpsN	Biofilm biosynthesis protein VpsN	Surface/Colonization	yes
+WcaI	Colanic acid biosynthesis WcaI	Surface/Colonization	yes
+CoiA	Competence protein CoiA	Stress/Plasticity	yes
+HerA	DNA repair helicase HerA	Stress/Plasticity	yes
+metalloprotease	Immunomodulating metalloprotease	Stress/Plasticity	yes
+YefM|YoeB	Toxin-antitoxin system (YefM/YoeB)	Stress/Plasticity	yes
