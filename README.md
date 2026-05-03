@@ -26,7 +26,8 @@ This project combines isolate genome sequencing, metagenomic recruitment, and co
 ### 1. Metagenomic recruitment mapping
 Leaf-associated *Zostera marina* metagenomic reads were mapped against a combined Bowtie2 reference built from 19 eelgrass-associated *Vibrio* isolate genomes. Recruitment was summarized at the genome level using Samtools and CoverM, with relative abundance, mean coverage, and covered fraction used in downstream comparisons.
 
-Detailed workflow: [docs/mapping_workflow.md](docs/mapping_workflow.md)   Scripts: [scripts/01_mapping](scripts/01_mapping)
+- Detailed workflow: [docs/01_mapping_workflow.md](docs/01_mapping_workflow.md)   
+- Scripts: [scripts/01_mapping](scripts/01_mapping)
 
 ### 2. Phylogenetic tree construction
 
@@ -34,22 +35,29 @@ Evolutionary relationships among the 19 isolate genomes were explored
 using a KBase species-tree workflow. The resulting tree guided isolate 
 selection for downstream pangenome comparison.
 
-Detailed workflow: [docs/phylogeny_workflow.md](docs/phylogeny_workflow.md)
+Detailed workflow: [docs/02_phylogeny_workflow.md](docs/02_phylogeny_workflow.md)
 
 ### 3. Genome quality and taxonomic placement
 
 The focal isolate Isol153 was evaluated for genome quality using CheckM2 and then screened against GTDB representative genomes using GTDB-Tk ANI analysis. This workflow was used to confirm that the Isol153 assembly was high quality and to identify its closest currently represented GTDB reference lineage.
 
-- Detailed workflow: [docs/isol153_taxonomy_workflow.md](docs/isol153_taxonomy_workflow.md)
+- Detailed workflow: [docs/03_isol153_taxonomy_workflow.md](docs/03_isol153_taxonomy_workflow.md)
 - Scripts: [scripts/03_checkm2_gtdb/](scripts/03_checkm2_gtdb/)
 
 ### 4. Pangenome analysis
 
 Isol153 was compared with closely related *Vibrio* isolates using a local anvi'o pangenome workflow. This analysis was used to distinguish conserved shared gene-cluster content from variable, accessory, and singleton-like regions.
 
-- Detailed workflow: [docs/pangenome_workflow.md](docs/pangenome_workflow.md)
+- Detailed workflow: [docs/04_pangenome_workflow.md](docs/04_pangenome_workflow.md)
+- Script: [scripts/04_pangenome/](scripts/04_pangenome/)
 
-- 
+### 5. Functional comparison
+
+Isol153-specific candidate functions were identified by KOfam-based 
+functional enrichment and visualized as a presence/absence heatmap.
+
+- Detailed workflow: [docs/05_functional_comparison_workflow.md](docs/05_functional_comparison_workflow.md)
+- Script: [scripts/05_functional_comparison/](scripts/05_functional_comparison/)
 
 ## Main findings
 
