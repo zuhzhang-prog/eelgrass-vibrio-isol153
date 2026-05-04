@@ -413,11 +413,3 @@ This is why the poster describes these as **candidate** functions rather than co
 - Singleton-like gene clusters may reflect true lineage-specific content, missing close relatives, or assembly/annotation artifacts.
 - The pangenome figure is useful for structural comparison, but ecological interpretation requires the functional annotation and enrichment analysis described in [`docs/functional_comparison_workflow.md`](functional_comparison_workflow.md).
 
----
-
-## Related workflows
-
-- Metagenomic recruitment mapping: [`docs/mapping_workflow.md`](mapping_workflow.md)
-- Phylogenetic tree construction: [`docs/phylogeny_workflow.md`](phylogeny_workflow.md)
-- Isol153 taxonomy placement: [`docs/checkm2_gtdb_workflow.md`](checkm2_gtdb_workflow.md)
-- Functional comparison: [`docs/functional_comparison_workflow.md`](functional_comparison_workflow.md)
