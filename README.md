@@ -96,16 +96,6 @@ This project therefore frames Isol153 as a candidate eelgrass-associated *Vibrio
 
 This repository is intended to document a reproducible project workflow rather than store all raw sequencing data. It is organized around the major analytical steps used to generate the poster figures.
 
-Suggested structure:
-
-- `metadata/` — isolate and site metadata
-- `scripts/01_mapping/` — Bowtie2, samtools, and CoverM workflow
-- `scripts/04_checkm2_gtdb/` — genome quality and ANI screening
-- `scripts/05_pangenome/` — anvi’o pangenome workflow
-- `scripts/07_enrichment/` — KOfam comparison and enrichment
-- `scripts/08_figures/` — figure generation scripts
-- `results/` — summary tables and poster-ready figures
-- `docs/` — workflow notes and interpretation notes
 
 ## Reproducibility note
 
