@@ -11,7 +11,7 @@ The outputs of this workflow support **Figure 3** of the poster.
 
 ## Purpose
 
-The pangenome analysis (see [`docs/pangenome_workflow.md`](pangenome_workflow.md)) showed that Isol153 carries substantial accessory and singleton-like gene-cluster content. But knowing that gene clusters are "different" is not the same as knowing *what they do*. This workflow takes the next step: it asks **what functional traits does Isol153 carry that the other three species representatives do not?**
+The pangenome analysis (see [`docs/04_pangenome_workflow.md`](04_pangenome_workflow.md)) showed that Isol153 carries substantial accessory and singleton-like gene-cluster content. But knowing that gene clusters are "different" is not the same as knowing *what they do*. This workflow takes the next step: it asks **what functional traits does Isol153 carry that the other three species representatives do not?**
 
 Specifically:
 
